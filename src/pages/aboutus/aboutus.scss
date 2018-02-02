@@ -1,0 +1,29 @@
+page-aboutus {
+
+    ion-navbar{
+        .toolbar-background{
+            background: #2f64c0;
+        }
+        .bar-button, .toolbar-title{
+            color: #fff;
+        }
+    }
+
+    ion-content{
+        background-color: #e3dede !important;
+        ion-card{
+            ion-card-header{
+                font-size: 19px !important;
+            }
+            ion-card-content{
+                ion-item{
+                    padding-left: 0px !important;
+                }
+                .list-ios > .item-block:first-child, .list-md > .item-block:first-child {
+                    border-top: 0.55px solid #c8c7cc;
+                }
+            }
+        }
+    }
+
+}

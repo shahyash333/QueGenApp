@@ -1,0 +1,54 @@
+page-settings-edit {
+
+     ion-navbar{
+        .toolbar-background{
+            background: #2f64c0;
+        }
+        .bar-button, .toolbar-title{
+            color: #fff;
+        }
+    }
+
+    ion-content{
+        background-color: #e3dede !important;
+        
+        ion-card-content{             
+            ion-label{
+                color: #333 !important;
+                font-size: 17px;
+            }
+            ion-input{
+                width: 100%;
+                font-size: 16px !important;
+                color: #666 !important;
+                border-bottom: 1px solid #c4c4c4;
+            }
+            p.school-logo{
+                margin-left: 0px !important;
+                width: 100%;
+            }
+            .school-logo{
+                img{                        
+                    height: 120px;
+                    width: 150px;
+                    margin: 0 auto;
+                }
+            } 
+            .gallery{
+                background-color: #488aff;
+                padding: 8px 10px;
+                position: absolute;
+                right: 23px;
+                top: 30px;
+                ion-icon{
+                    color: white;
+                }
+            }       
+        }
+    }
+
+    ion-footer{
+        background-color: #fff;
+    }
+
+}

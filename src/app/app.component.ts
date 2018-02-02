@@ -3,8 +3,12 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+
+import { QuestionPaperGenratorPage } from '../pages/question-paper-genrator/question-paper-genrator';
+import { BlueprintPage } from '../pages/blueprint/blueprint';
+import { AboutusPage } from '../pages/aboutus/aboutus';
+import { SettingsPage } from '../pages/settings/settings';
+import { SettingsEditPage } from '../pages/settings-edit/settings-edit';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,17 +16,19 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = QuestionPaperGenratorPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, img: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Question Paper Genrator',  img: '../assets/imgs/question.png', component: QuestionPaperGenratorPage },
+      { title: 'Blueprint',  img: "../assets/imgs/blueprint.png", component: BlueprintPage },
+      { title: 'About us',  img: "../assets/imgs/about.png", component: AboutusPage },
+      { title: 'Settings',  img: "../assets/imgs/settings.png", component: SettingsPage }
     ];
 
   }

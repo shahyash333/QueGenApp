@@ -1,0 +1,64 @@
+
+page-blueprint-modal {
+
+    ion-navbar{
+        .toolbar-background{
+            background: #2f64c0;
+        }
+        .bar-button, .toolbar-title{
+            color: #fff;
+        }
+    }
+
+    ion-content{
+        background-color: #e3dede !important;
+        ion-card{
+            ion-card-content{
+                ion-list{
+                    .header-blueprint {                        
+                        text-transform: uppercase;
+                        color: #134fb8;
+                        font-weight: bold;
+                        font-size: 14px;                        
+                    }
+                    .ttl-marks{
+                        margin-top: 15px;
+                        text-transform: uppercase;
+                        color: #134fb8;
+                        font-weight: bold;
+                        font-size: 14px;    
+                        border-bottom: 0.55px solid #c8c7cc; 
+                        padding-bottom: 10px; 
+                    }
+                    .blueprintDetail{  
+                        margin-bottom: 15px;  
+                        ion-item{
+                            ion-label{
+                                color: #333 !important;
+                                font-size: 17px;
+                            }                        
+                            padding-left: 0px !important;
+                            font-size: 16px;
+                            color: rgb(102, 102, 102);
+                            border-bottom: 1px solid rgb(196, 196, 196);                           
+                        }
+                    }
+                    ion-row{
+                        ion-input{
+                            input{
+                                border: 1px solid #c4c4c4 !important;
+                                height: 30px;
+                                margin: 5px 0 !important;
+                                padding: 5px !important;
+                            }
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+
+    ion-footer{
+        background-color: #fff;
+    }
+}

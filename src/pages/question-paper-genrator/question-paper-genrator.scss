@@ -1,0 +1,39 @@
+page-question-paper-genrator {
+   
+    ion-navbar{
+        .toolbar-background{
+            background: #2f64c0;
+        }
+        .bar-button, .toolbar-title{
+            color: #fff;
+        }
+    }
+
+    ion-content{
+        background-color: #e3dede !important;
+        ion-card{
+            ion-card-content{
+                ion-list{
+                    .list-header-md, .list-header-ios {
+                        border-bottom: 0.55px solid #c8c7cc; 
+                        border-top: 0px;
+                        text-transform: uppercase;
+                        color: #134fb8;
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                    .scroll{
+                        // height: 140px;
+                        max-height: 140px;
+                        overflow-y: auto;
+                    }  
+                }
+            }
+        }      
+    }
+
+    ion-footer{
+        background-color: #fff;
+    }
+
+}
